@@ -1,0 +1,36 @@
+{
+  "name": "fintrack",
+  "version": "1.0.0",
+  "description": "CLI de controle financeiro pessoal — registre entradas, despesas e acompanhe seu saldo mensal.",
+  "main": "src/index.js",
+  "bin": {
+    "fintrack": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "server": "node src/server.js",
+    "client": "cd client && npm run dev",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
+    "lint": "eslint src/ tests/"
+  },
+  "keywords": ["financeiro", "cli", "controle", "pessoal"],
+  "author": "Italo",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "date-fns": "^3.6.0",
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  },
+  "type": "module"
+}
